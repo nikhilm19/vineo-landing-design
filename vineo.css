@@ -1,0 +1,471 @@
+:root{
+
+	width: 100vw;
+	height: 100vh;
+}
+body,.main{
+	width: 100vw;
+	height: 100vh;
+	margin: 0;
+}
+.landing{
+	background-color: #253477;
+	color: white;
+	height: 60%;
+}
+
+.logo{
+
+	background-color:#00C9BA;
+	width: 30px;
+	height: 20px; 
+	padding: 10px;
+	text-align: center;
+	border-radius: 10px;
+	margin-right: 10px;
+	color: white;
+}
+
+
+.header{
+	padding-top: 2%;
+	padding-left: 10%;
+	padding-right: 10%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.header-links{
+	display: flex;
+	width: 50%;
+	justify-content: center;
+	align-items: center;
+}
+.header-links>a{
+	text-decoration: none;
+	text-decoration-style: none;
+	color: white;
+	margin-right: 20px;
+	font-family: 'Overpass', sans-serif;
+}
+a.download{
+
+	background-color: #00C9BA;
+	padding:10px;
+	padding-left: 20px;
+	padding-right: 20px;
+
+	border-radius: 10px;
+	color: #000;
+}
+
+.brand-details{
+
+	display: flex;
+	flex-direction: row;
+	
+
+}
+.brand-name{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.brand-name >p{
+
+	font-family: 'Overpass', sans-serif;
+	margin: 0;
+	text-align: center;
+	font-size: 20px;
+}
+
+.tagline-container{
+
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 5%;
+}
+
+.tagline-content{
+
+	width: 40%;
+	font-family: 'Varela Round', sans-serif;
+	text-align: center;
+	font-size: 20px;
+}
+
+.try-it > button{
+
+color:#000;
+border:none;
+padding: 15px 35px 15px 35px;
+
+border-radius: 10px;
+
+transition: all 0.2s ease-in;
+
+background-color: #00C9BA;
+font-size: 18px;
+}
+
+.try-it > button:hover{
+	background-color: #33939f;
+	color: white;
+	
+	margin-top: -5px;
+}
+
+@keyframes animateWave {
+  0% {
+    transform: scale(1,0);
+  }
+  100% {
+    transform: scale(1,1);
+  }
+}
+
+.vineo-demo--container{
+
+	display: flex;
+	
+	height: 35rem;
+	
+	background-image: url('wave.svg');
+	transition: all 0.5s ease;
+	background-repeat: no-repeat;
+	justify-content: center;
+	padding: 10px;
+	transform-origin: bottom;
+  animation: animateWave 1500ms ease-out backwards;
+}
+
+.vineo-demo--content{
+
+	
+	padding: 20px;
+
+	display: flex;
+
+	
+	flex-direction: row;
+	background-color: white;
+	width: 75%;
+	height: 40rem;
+	border:5px black solid;
+	border-radius: 20px;
+}
+
+.vineo-demo-left{
+	display: flex;
+	flex-direction: column;
+	width: 60%;
+
+}
+
+.vineo-demo-left--about{
+	width: 100%;
+	
+	display: flex;
+	flex-direction: row;
+	height: 20%;
+	margin-bottom: 10px;
+}
+.vineo-demo--logo{
+	margin-right: 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+.vineo-demo--meeting-details{
+	width: 100%;
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+
+	align-items: center;
+	flex-direction: row;
+	background-color: #F1F4F9;
+	border-radius: 20px;
+	font-family: 'Overpass'
+}
+.meeting-title,.meeting-category{
+	margin: 0;
+}
+
+.meeting-category{
+	color:#8f8f8f;
+}
+
+.meeting-actions img{
+	padding: 10px;
+	background-color: white;
+	border-radius: 100%;
+
+}
+.persons-container{
+	width: 100%;
+	flex-basis: 70%;
+	min-height: 60%;
+	margin-bottom: 20px;
+	
+}
+.overlay-bg{
+	display: flex;
+	justify-content: flex-end;
+	width: 100%;
+	
+	background-image: url("bg.jpg");
+	background-size: cover;
+	border-radius: 20px;
+	
+}
+.persons-avatars{
+	display: flex;
+	flex-direction: column;
+	right: 0;
+	height: 80%;
+	
+
+}
+
+.persons-avatars > img{
+
+	border:white 2px solid;
+	border-radius: 10px;
+	margin-bottom: 3px;
+
+}
+
+.vineo-demo-left--actions-container{
+
+	background-color: #F1F4F9;
+	
+	width: 100%;
+	height: 20%;
+	display: flex;
+	flex-direction: row;
+	border-radius: 10px;
+	justify-content: center;
+	
+	justify-content: space-around;
+	margin-top: 15px;
+}
+
+.actions-content{
+
+	width: 60%;
+
+	display: flex;
+	flex-direction: row;
+	border-radius: 10px;
+	justify-content: center;
+	padding: 20px;
+	justify-content: space-around;
+	font-family: 'Varela Round',
+}
+.actions-content p{
+	font-family: 'Overpass';
+	margin:0;
+	text-align: center;
+}
+.actions-content i{
+
+	background-color: white;
+	border-radius: 100%;
+	padding: 20px;
+}
+.vineo-demo-right{
+	margin-left: 20px;
+	width: 40%;
+	background-color: #F1F4F9;
+	justify-content: center;
+	border-radius: 20px;
+
+
+}
+
+.vineo-demo-right--container{
+
+	display: flex;
+	width: 100%;
+	height: 100%;
+	justify-content: flex-start;
+	flex-direction: column;
+	align-items: center;
+
+}
+
+.chat-header,.current-plan,.type-message{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.chat-header{
+	justify-content: space-between;
+	width: 90%;
+	font-family: 'Overpass', sans-serif;
+	font-size: 15px;
+}
+.close-icon{
+	width: 20px;
+}
+
+.current-plan{
+
+	flex-direction: column;
+	background-color: #0066FA;
+	width: 90%;
+	border-radius: 20px;
+	color: white;
+	font-family: 'Overpass';
+	font-size: 12px;
+	margin-bottom: 20px;
+	height: 20%;
+	padding-bottom: 20px;
+	padding-top: 10px;
+}
+
+.current-plan>h2{
+	margin-bottom: 10px;
+}
+
+
+.time,.files{
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+	margin-bottom:15px;
+}
+.time-text,.files-text{
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	
+}
+.files-text>p, .time-text>p{
+	margin:0;
+}
+
+input[type='range'] {
+     background: linear-gradient(to right, white 0%, white 40%, #4C93FB 0%, #4C93FB 100%);
+  border: solid 1px #82CFD0;
+  border-radius: 8px;
+  height: 7px;
+  width: 100%;
+  outline: none;
+  transition: background 450ms ease-in;
+  -webkit-appearance: none;
+  }
+    
+  
+
+.chat-bubbles--container{
+
+	width: 90%;
+	display: flex;
+	box-sizing: border-box;
+	padding-left: 20px;
+	height: 50%;
+	margin-bottom: 10px;
+}
+
+.chat-bubbles--content{
+	width: 100%;
+}
+
+.chat-bubble--container{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 10px;
+
+
+}  
+
+.chat-bubbles--content > div:nth-child(2) >div.chat-bubble--image{
+	background-image: url('person1.jpg')
+}
+.chat-bubbles--content > div:nth-child(1) >div.chat-bubble--image{
+	background-image: url('person2.jpg')
+}
+.chat-bubbles--content > div:nth-child(3) >div.chat-bubble--image{
+	background-image: url('person3.jpg')
+}
+
+.chat-bubble--image{
+
+	width: 40px;
+	height: 40px;
+	background-image: url("bg.jpg");
+	border-radius: 100%;
+	background-size: cover;
+	position: relative;
+
+}
+.chat-bubble--image:before{
+	display: inline-block;
+
+	content:"";
+	color:white;
+	background-color: #00BB9E;
+	min-width: 10px;
+	min-height: 10px;
+	position: absolute;
+	right: 0;
+	border-radius: 100%;
+	border:1px white solid;
+	bottom: 0;
+
+}
+
+
+
+.chat-bubble--message{
+	background-color: white;
+	
+	padding: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	width: auto;
+	margin-left: 10px;
+	border-radius:10px;
+	font-family: 'Overpass';
+	border:2px #d4d4d4 solid;
+}
+
+.chat-bubble--message>h4, .chat-bubble--message>p{
+	margin:0;
+	font-size: 12px;
+}
+
+
+.type-message{
+
+	background-color: white;
+	width: 90%;
+	border-radius: 20px;
+	height: 4rem;
+}
+
+input[type=text]{
+	padding: 10px;
+	margin-right: 20px;
+	margin-left: 20px;
+	width: 60%;
+}
+.type-message>button{
+	background-color: #0066FA;
+	color: white;
+	border-radius: 5px;
+	padding: 5px 10px 5px 10px;
+}
+
+
+
+
