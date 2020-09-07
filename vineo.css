@@ -131,9 +131,9 @@ font-size: 18px;
 
 	display: flex;
 	
-	height: 35rem;
+	height: auto;	
 	
-	background-image: url('wave.svg');
+	background-image: url('images/wave.svg');
 	transition: all 0.5s ease;
 	background-repeat: no-repeat;
 	justify-content: center;
@@ -199,11 +199,16 @@ font-size: 18px;
 .meeting-category{
 	color:#8f8f8f;
 }
+.meeting-actions{
 
-.meeting-actions img{
+	display: flex;
+	flex-direction: row;
+}
+.meeting-actions i{
 	padding: 10px;
 	background-color: white;
 	border-radius: 100%;
+	margin-right: 2px;
 
 }
 .persons-container{
@@ -218,7 +223,7 @@ font-size: 18px;
 	justify-content: flex-end;
 	width: 100%;
 	
-	background-image: url("bg.jpg");
+	background-image: url("images/bg.jpg");
 	background-size: cover;
 	border-radius: 20px;
 	
@@ -388,21 +393,55 @@ input[type='range'] {
 
 }  
 
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(100px,0,0);
+        opacity: 0;
+
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1;
+
+    }
+}
+.chat-bubbles--content > div:nth-child(1){
+	animation: fadeInUp 1000ms ease-out backwards;
+	animation-delay: 1.5s;
+	
+}
+
+.chat-bubbles--content > div:nth-child(2){
+	animation: fadeInUp 1000ms ease-out backwards;
+	animation-delay: 2.5s;
+}
+
+.chat-bubbles--content > div:nth-child(3){
+	animation: fadeInUp 1000ms ease-out backwards;
+	animation-delay: 3.5s;
+}
+
+.chat-bubbles--content > div:nth-child(4){
+	animation: fadeInUp 1500ms ease-out backwards;
+	animation-delay: 4.5s;
+}
+
 .chat-bubbles--content > div:nth-child(2) >div.chat-bubble--image{
-	background-image: url('person1.jpg')
+	background-image: url('images/person1.jpg')
 }
 .chat-bubbles--content > div:nth-child(1) >div.chat-bubble--image{
-	background-image: url('person2.jpg')
+	background-image: url('images/person2.jpg')
 }
 .chat-bubbles--content > div:nth-child(3) >div.chat-bubble--image{
-	background-image: url('person3.jpg')
+	background-image: url('images/person3.jpg')
 }
 
 .chat-bubble--image{
 
 	width: 40px;
 	height: 40px;
-	background-image: url("bg.jpg");
+	background-image: url("images/bg.jpg");
 	border-radius: 100%;
 	background-size: cover;
 	position: relative;
@@ -451,6 +490,7 @@ input[type='range'] {
 	width: 90%;
 	border-radius: 20px;
 	height: 4rem;
+	margin-bottom: 5%;
 }
 
 input[type=text]{
@@ -458,8 +498,11 @@ input[type=text]{
 	margin-right: 20px;
 	margin-left: 20px;
 	width: 60%;
+	border-radius: 20px;
+	border:1px blue solid;
 }
 .type-message>button{
+	border: none;
 	background-color: #0066FA;
 	color: white;
 	border-radius: 5px;
@@ -468,4 +511,28 @@ input[type=text]{
 
 
 
+.footer{
+
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 20%;
+
+	font-family: 'Overpass';
+
+	margin-top: 2%;
+	justify-content: center;
+	align-items: center;
+
+	background-color: #008076;
+	color: yellow;
+
+
+}
+
+.footer a{
+	text-decoration-style: none;
+	
+	color: white;
+}
 
